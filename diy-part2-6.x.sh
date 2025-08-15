@@ -40,11 +40,6 @@ endef
 TARGET_DEVICES += firefly_station-m2" >> target/linux/rockchip/image/legacy.mk
 
 
-# 复制 02_network 网络配置文件到 target/linux/rockchip/armv8/base-files/etc/board.d/ 目录下
-rm -f target/linux/rockchip/armv8/base-files/etc/board.d/02_network
-cp -f $GITHUB_WORKSPACE/configfiles/02_network target/linux/rockchip/armv8/base-files/etc/board.d/02_network
-
-
 # 复制dts设备树文件到指定目录下
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3588/rk3588-orangepi-5-plus.dts target/linux/rockchip/dts/rk3588/
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3568/{rk3566-firefly-roc-pc.dts,rk3566.dtsi,rk3568-dram-default-timing.dtsi,rk3568-linux.dtsi,rk3568-pinctrl.dtsi,rk3568.dtsi} target/linux/rockchip/dts/rk3568/
