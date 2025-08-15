@@ -7,10 +7,6 @@
 # Blog: https://p3terx.com
 #===============================================
 
-# 修改版本为编译日期，数字类型。
-date_version=$(date +"%Y%m%d%H")
-echo $date_version > version
-
 # 修复系统kernel内核md5校验码不正确的问题
 # https://mirrors.ustc.edu.cn/openwrt/releases/24.10.2/targets/rockchip/armv8/kmods/
 # https://downloads.openwrt.org/releases/24.10.2/targets/rockchip/armv8/kmods/
@@ -25,6 +21,10 @@ if [ -n "$hash_value" ] && [[ "$hash_value" =~ ^[0-9a-f]{32}$ ]]; then
     echo "$hash_value" > .vermagic
     echo "kernel内核md5校验码：$hash_value"
 fi
+
+# 修改版本为编译日期，数字类型。
+date_version=$(date +"%Y%m%d%H")
+echo $date_version > version
 
 # 为iStoreOS固件版本加上编译作者
 #author="xiaomeng9597"
