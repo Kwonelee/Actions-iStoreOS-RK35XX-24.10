@@ -43,9 +43,6 @@ TARGET_DEVICES += firefly_station-m2" >> target/linux/rockchip/image/legacy.mk
 # 复制dts设备树文件到指定目录下
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3588/rk3588-orangepi-5-plus.dts target/linux/rockchip/dts/rk3588/
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3568/rk3566-roc-pc.dts target/linux/rockchip/dts/rk3568/
-#cp -f $GITHUB_WORKSPACE/configfiles/dts/{rockchip-pinconf.dtsi,rockchip-drm-vvop.dtsi} target/linux/rockchip/dts/
-#rm -rf target/linux/rockchip/files/include/dt-bindings/
-#cp -rf "$GITHUB_WORKSPACE/configfiles/dt-bindings" target/linux/rockchip/files/include/
 
 
 # 定时限速插件
