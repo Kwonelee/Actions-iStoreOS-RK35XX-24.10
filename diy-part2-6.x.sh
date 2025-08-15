@@ -28,11 +28,22 @@ CONFIG_KPROBES=y" >> target/linux/rockchip/armv8/config-6.6
 #chmod 755 package/base-files/files/bin/coremark.sh
 
 
+# 增加firefly_station-m2
+echo -e "\\ndefine Device/firefly_station-m2
+\$(call Device/Legacy/rk3566,\$(1))
+  DEVICE_VENDOR := Firefly
+  DEVICE_MODEL := Station M2 / RK3566 ROC PC
+  DEVICE_DTS := rk3568/rk3566-firefly-roc-pc
+  SUPPORTED_DEVICES += rockchip,rk3566-firefly-roc-pc firefly,rk3566-roc-pc firefly,station-m2
+  DEVICE_PACKAGES := kmod-nvme kmod-scsi-core
+endef
+TARGET_DEVICES += firefly_station-m2" >> target/linux/rockchip/image/legacy.mk
+
+
 # 复制dts设备树文件到指定目录下
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3588/rk3588-orangepi-5-plus.dts target/linux/rockchip/dts/rk3588/
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3568/{rk3566-firefly-roc-pc.dts,rk3566.dtsi,rk3568-dram-default-timing.dtsi,rk3568-linux.dtsi,rk3568-pinctrl.dtsi,rk3568.dtsi} target/linux/rockchip/dts/rk3568/
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rockchip-pinconf.dtsi target/linux/rockchip/dts/
-cp -f $GITHUB_WORKSPACE/configfiles/image/legacy.mk target/linux/rockchip/image/
 
 
 # 定时限速插件
