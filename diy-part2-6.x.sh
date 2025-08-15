@@ -44,7 +44,8 @@ TARGET_DEVICES += firefly_station-m2" >> target/linux/rockchip/image/legacy.mk
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3588/rk3588-orangepi-5-plus.dts target/linux/rockchip/dts/rk3588/
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3568/{rk3566-firefly-roc-pc.dts,rk3566.dtsi,rk3568-dram-default-timing.dtsi,rk3568-linux.dtsi,rk3568-pinctrl.dtsi,rk3568.dtsi} target/linux/rockchip/dts/rk3568/
 cp -f $GITHUB_WORKSPACE/configfiles/dts/{rockchip-pinconf.dtsi,rockchip-drm-vvop.dtsi} target/linux/rockchip/dts/
-cp -f $GITHUB_WORKSPACE/configfiles/dt-bindings target/linux/rockchip/files/include/dt-bindings
+rm -rf target/linux/rockchip/files/include/dt-bindings/
+cp -rf "$GITHUB_WORKSPACE/configfiles/dt-bindings" target/linux/rockchip/files/include/
 
 
 # 定时限速插件
