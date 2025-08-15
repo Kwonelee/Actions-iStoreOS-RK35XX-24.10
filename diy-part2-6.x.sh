@@ -23,9 +23,9 @@ CONFIG_KPROBES=y" >> target/linux/rockchip/armv8/config-6.6
 
 
 # 集成CPU性能跑分脚本
-cp -a $GITHUB_WORKSPACE/configfiles/coremark/* package/base-files/files/bin/
-chmod 755 package/base-files/files/bin/coremark
-chmod 755 package/base-files/files/bin/coremark.sh
+#cp -a $GITHUB_WORKSPACE/configfiles/coremark/* package/base-files/files/bin/
+#chmod 755 package/base-files/files/bin/coremark
+#chmod 755 package/base-files/files/bin/coremark.sh
 
 
 # 复制dts设备树文件到指定目录下
@@ -36,4 +36,4 @@ cp -f $GITHUB_WORKSPACE/configfiles/image/legacy.mk target/linux/rockchip/image/
 
 
 # 定时限速插件
-git clone --depth=1 https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
+#git clone --depth=1 https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
