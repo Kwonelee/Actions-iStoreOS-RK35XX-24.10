@@ -1,4 +1,5 @@
 CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_xunlong_orangepi-5-plus=y
+CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_firefly_station-m2=y
 
 CONFIG_PACKAGE_lm-sensors=y
 CONFIG_PACKAGE_lm-sensors-detect=y
