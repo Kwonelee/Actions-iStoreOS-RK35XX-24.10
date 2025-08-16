@@ -1,6 +1,6 @@
 CONFIG_TARGET_rockchip=y
 CONFIG_TARGET_rockchip_armv8=y
-CONFIG_TARGET_MULTI_PROFILE=y
+# CONFIG_TARGET_MULTI_PROFILE is not set
 CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_firefly_station-m2=y
 # CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_easepi_ars4 is not set
 # CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_easepi_r1 is not set
