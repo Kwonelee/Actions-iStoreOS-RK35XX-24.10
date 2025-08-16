@@ -47,7 +47,8 @@ TARGET_DEVICES += firefly_station-m2" >> target/linux/rockchip/image/legacy.mk
 # 复制dts设备树文件到指定目录下
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3588/rk3588-orangepi-5-plus.dts target/linux/rockchip/dts/rk3588/
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3568/rk3566-roc-pc.dts target/linux/rockchip/dts/rk3568/
-
+mkdir -p target/linux/rockchip/files/u-boot/firefly_station-m2
+cp $GITHUB_WORKSPACE/configfiles/u-boot/firefly_station-m2/u-boot-rockchip.bin target/linux/rockchip/files/u-boot/firefly_station-m2/
 
 # 定时限速插件
 #git clone --depth=1 https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
