@@ -18,8 +18,8 @@
 
 
 # 追加binder内核参数
-echo "CONFIG_PSI=y
-CONFIG_KPROBES=y" >> target/linux/rockchip/armv8/config-6.6
+#echo "CONFIG_PSI=y
+#CONFIG_KPROBES=y" >> target/linux/rockchip/armv8/config-6.6
 
 
 # 集成CPU性能跑分脚本
