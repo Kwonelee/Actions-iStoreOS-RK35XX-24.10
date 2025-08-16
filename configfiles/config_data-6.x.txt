@@ -1,1 +1,2 @@
+# CONFIG_TARGET_MULTI_PROFILE is not set
 CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_firefly_station-m2=y
