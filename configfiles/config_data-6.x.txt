@@ -1,4 +1,22 @@
-CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_xunlong_orangepi-5-plus=y
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_easepi_ars4 is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_easepi_r1 is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_easepi_r1-lite is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_fastrhino_r6xs is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r3s is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4se is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r5s is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_friendlyarm_nanopi-r6s is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_hinlink_h88k is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_hinlink_opc-h6xk is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_hlink_h28k is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_lyt_t68m is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_lyt_t88m is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_e20c is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_e52c is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_e54c is not set
+# CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_xunlong_orangepi-5-plus is not set
 CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_firefly_station-m2=y
 
 CONFIG_PACKAGE_lm-sensors=y
