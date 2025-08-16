@@ -36,6 +36,10 @@ echo -e "\\ndefine Device/firefly_station-m2
   DEVICE_DTS := rk3568/rk3566-roc-pc
   SUPPORTED_DEVICES += rockchip,rk3566-roc-pc firefly,rk3566-roc-pc firefly,station-m2
   DEVICE_PACKAGES := kmod-nvme kmod-scsi-core
+  # 添加 U-Boot 配置
+  UBOOT_DEVICE_NAME := evb_rk3568  # 需与 U-Boot 编译时的设备名匹配
+  UBOOT_PATH := target/linux/rockchip/files/u-boot/firefly_station-m2/  # 你的 U-Boot 源码或镜像目录
+  UBOOT_BIN := u-boot-rockchip.bin  # 镜像文件名
 endef
 TARGET_DEVICES += firefly_station-m2" >> target/linux/rockchip/image/legacy.mk
 
