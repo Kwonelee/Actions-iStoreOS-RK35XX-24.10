@@ -6,8 +6,6 @@
 #include <dt-bindings/pinctrl/rockchip.h>
 #include <dt-bindings/soc/rockchip,vop2.h>
 #include <rockchip/rk3566.dtsi>
-#include "rk3568-ip.dtsi"
-#include "rk3568-ip-rk809.dtsi"
 
 / {
 	model = "Firefly Station M2";
