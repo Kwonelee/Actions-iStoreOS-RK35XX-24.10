@@ -33,8 +33,8 @@ echo -e "\\ndefine Device/firefly_station-m2
 \$(call Device/Legacy/rk3566,\$(1))
   DEVICE_VENDOR := Firefly
   DEVICE_MODEL := Station M2 / RK3566 ROC PC
-  DEVICE_DTS := rk3568/rk3566-firefly-roc-pc
-  SUPPORTED_DEVICES += rockchip,rk3566-firefly-roc-pc firefly,rk3566-roc-pc firefly,station-m2
+  DEVICE_DTS := rk3568/rk3566-roc-pc
+  SUPPORTED_DEVICES += rockchip,rk3566-roc-pc firefly,rk3566-roc-pc firefly,station-m2
   DEVICE_PACKAGES := kmod-nvme kmod-scsi-core
 endef
 TARGET_DEVICES += firefly_station-m2" >> target/linux/rockchip/image/legacy.mk
