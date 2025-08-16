@@ -50,5 +50,6 @@ cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3568/rk3566-roc-pc.dts target/linux/ro
 mkdir -p target/linux/rockchip/files/u-boot/firefly_station-m2
 cp $GITHUB_WORKSPACE/configfiles/u-boot/firefly_station-m2/u-boot-rockchip.bin target/linux/rockchip/files/u-boot/firefly_station-m2/
 
+
 # 定时限速插件
 #git clone --depth=1 https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
