@@ -2,8 +2,8 @@ include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/kernel.mk
 
 PKG_NAME:=uboot-firefly-station-m2
-PKG_VERSION:=2024.07  # 需与你的 U-Boot 实际版本一致
-PKG_RELEASE:=1
+PKG_VERSION:=2024.01-armbian-S31b8  # 需与你的 U-Boot 实际版本一致
+PKG_RELEASE:=20250528
 
 PKG_MAINTAINER:=YourName <your@email.com>
 PKG_LICENSE:=GPL-2.0
